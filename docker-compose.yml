@@ -9,7 +9,7 @@ services:
       - POSTGRES_DB=postgres
     restart: always             # run as a service
     volumes:
-      - ./postgresql:/var/lib/postgresql/12/main
+      - ./postgresql:/var/lib/postgresql/data/main
 
   odoo12:
     image: odoo:14.0
