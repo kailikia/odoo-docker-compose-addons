@@ -1,7 +1,7 @@
 version: '2'
 services:
   db:
-    image: postgres:11
+    image: postgres:9.5
     # container_name: postgres95
     environment:
       - POSTGRES_PASSWORD=odoo
@@ -12,7 +12,7 @@ services:
       - ./postgresql:/var/lib/postgresql
 
   odoo12:
-    image: odoo:14.0
+    image: odoo:12.0
     # container_name: odoo12
     depends_on:
       - db
